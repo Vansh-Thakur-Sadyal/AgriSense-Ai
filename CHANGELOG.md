@@ -4,6 +4,11 @@ All notable changes to AgriSense AI. Versions follow [Semantic Versioning](https
 `MAJOR.MINOR.PATCH`. MAJOR for changes that break the API or the database, MINOR for new features,
 PATCH for bug fixes.
 
+## [Unreleased]
+
+### Documentation
+- Rebuilt the GitHub README with numbered navigation, setup and deployment guides, feature limitations, architecture and workflow diagrams, screenshots, a branded logo, and an animated product tour.
+
 ## [1.0.0] - 2026-11-24
 
 First version under git. Matches the build deployed at https://ai.software.microeagle.online (server release 9).

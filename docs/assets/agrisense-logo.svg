@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="150" viewBox="0 0 720 150" role="img" aria-labelledby="title description">
+  <title id="title">AgriSense AI</title>
+  <desc id="description">AgriSense AI leaf mark and Smart Farming Intelligence wordmark</desc>
+  <rect x="10" y="12" width="126" height="126" rx="32" fill="#2E8B57"/>
+  <path d="M37 99c0-34 25-58 66-58-4 38-25 61-57 61l-9 10" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M49 91c12-12 26-23 42-32" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+  <text x="164" y="78" fill="#183B2A" font-family="Segoe UI, Arial, sans-serif" font-size="54" font-weight="700" letter-spacing="-1">AgriSense AI</text>
+  <text x="167" y="119" fill="#547263" font-family="Segoe UI, Arial, sans-serif" font-size="25" letter-spacing="2">SMART FARMING INTELLIGENCE</text>
+</svg>
