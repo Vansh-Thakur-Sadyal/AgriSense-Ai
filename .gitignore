@@ -1,0 +1,51 @@
+# ---- secrets: NEVER commit ----
+config/api_keys.env
+*.env
+!*.env.example
+*.pem
+*.key
+*.keystore
+*.jks
+
+# ---- local data and environments ----
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+app/storage/
+data/raw/
+.claude/
+
+# ---- generated deliverables (rebuilt by the scripts in docs/) ----
+Project/
+AI_ML_Report/
+Submission_extras/
+docs/report/out/
+docs/AgriSense_AI_Model_Report.pdf
+*.zip
+
+# ---- training leftovers (the deployed models are in app/models) ----
+app/models/leaf_best.pt
+ml/backup_v1/
+ml/staging/
+ml/*.log
+ml/*.log.keep
+
+# ---- Android build output and machine-specific files ----
+android/.gradle/
+android/.kotlin/
+android/build/
+android/app/build/
+android/local.properties
+android/.idea/
+android/*.iml
+android/app/*.iml
+android/captures/
+android/app/release/
+
+# ---- editors and OS ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

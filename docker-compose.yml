@@ -1,0 +1,22 @@
+services:
+  agrisense:
+    build: .
+    image: agrisense:local
+    container_name: agrisense
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8150:8150"
+    volumes:
+      - agrisense_data:/app/storage
+      - ./config/api_keys.env:/app/config/api_keys.env:ro
+    # n8n network: e-mail OTP goes to the AgriSense_OTP_Delivery workflow by container name
+    networks: [default, n8n]
+    mem_limit: 1200m
+
+networks:
+  n8n:
+    external: true
+    name: n8n-kmar_default
+
+volumes:
+  agrisense_data:

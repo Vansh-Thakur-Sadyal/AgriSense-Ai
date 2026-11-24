@@ -1,0 +1,4 @@
+cpu: AMD EPYC 9355P 32-Core Processor
+vcpus: 2
+Mem:            7940        3114        1009          31        4146        4826
+image: agrisense:local

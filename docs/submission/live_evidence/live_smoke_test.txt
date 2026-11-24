@@ -1,0 +1,19 @@
+Live smoke test inside container agrisense on the VPS, 2026-11-23T18:59Z, throwaway database /tmp/smoke
+container: agrisense Up 15 minutes (healthy) image agrisense:local
+PASS register 
+PASS add farm 
+PASS crop rice
+PASS yield 5.398
+PASS fertiliser Complex fertiliser rich in Nitrogen and Potassium
+PASS disease (grey image) no_leaf 0.45s
+PASS weather live 15.6 degC 0.8s
+PASS nasa power 
+PASS soilgrids pH 7.8 10.1s
+PASS assistant Crop rotation is the practice of growing different crops on the same piece of land in a pl
+PASS pdf 
+PASS csv 
+PASS analytics 
+13/13 passed
+
+OTP delivery chain check (app -> n8n AgriSense_OTP_Delivery -> SMTP), reserved test domain so nothing is delivered:
+result: Message failed: 554 5.7.1 Recipient domain is reserved for documentation (RFC 2606) and cannot receive mail

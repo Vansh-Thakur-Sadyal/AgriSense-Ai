@@ -1,0 +1,12 @@
+HTTPS certificate check 2026-11-23 19:00 UTC
+host: ai.software.microeagle.online
+TLS version: TLSv1.3
+subject: {'commonName': 'ai.software.microeagle.online'}
+issuer: {'countryName': 'US', 'organizationName': "Let's Encrypt", 'commonName': 'YR2'}
+valid from: Nov 23 14:07:47 2026 GMT
+valid until: Feb 21 14:07:46 2027 GMT
+verified against system trust store: yes
+
+GET /healthz -> 200 {"ok":true}
+GET /api/status:
+{"models":{"crop":{"ready":true,"name":"Random Forest","test_accuracy":0.9955},"yield":{"ready":true,"name":"LightGBM (correction to 3-yr mean)","test_mae":0.8744,"test_r2":0.9424},"disease":{"ready":true,"name":"EfficientNet-B0 (torchvision, ImageNet-1k init), fine-tuned on CUDA (NVIDIA GeForce RTX 5070 Ti, mixed precision)","test_accuracy":0.9977},"fertiliser":{"ready":true,"name":"Rule engine (not ML)"}},"assistant":true,"otp":true}

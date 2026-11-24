@@ -1,0 +1,10 @@
+.venv
+data
+ml
+config
+app/storage
+app/models/leaf_best.pt
+**/__pycache__
+*.log
+.claude
+deploy

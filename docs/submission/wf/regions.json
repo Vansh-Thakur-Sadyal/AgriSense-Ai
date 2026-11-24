@@ -1,0 +1,526 @@
+{
+ "01_sign_in": [
+  {
+   "n": 1,
+   "label": "Sign in"
+  },
+  {
+   "n": 2,
+   "label": "Email or phone"
+  },
+  {
+   "n": 3,
+   "label": "Password"
+  },
+  {
+   "n": 4,
+   "label": "Sign in"
+  }
+ ],
+ "02_sign_up": [
+  {
+   "n": 1,
+   "label": "Create account"
+  },
+  {
+   "n": 2,
+   "label": "Full name"
+  },
+  {
+   "n": 3,
+   "label": "Email"
+  },
+  {
+   "n": 4,
+   "label": "Phone"
+  },
+  {
+   "n": 5,
+   "label": "Password"
+  },
+  {
+   "n": 6,
+   "label": "State"
+  },
+  {
+   "n": 7,
+   "label": "District"
+  },
+  {
+   "n": 8,
+   "label": "Role"
+  },
+  {
+   "n": 9,
+   "label": "Create account"
+  }
+ ],
+ "03_email_code": [
+  {
+   "n": 1,
+   "label": "Check your e-mail"
+  },
+  {
+   "n": 2,
+   "label": "Verification code"
+  },
+  {
+   "n": 3,
+   "label": "Verify"
+  },
+  {
+   "n": 4,
+   "label": "Resend in 59s"
+  }
+ ],
+ "04_overview": [
+  {
+   "n": 1,
+   "label": "Sidebar navigation"
+  },
+  {
+   "n": 2,
+   "label": "Top bar"
+  },
+  {
+   "n": 3,
+   "label": "Full auto analysis"
+  },
+  {
+   "n": 4,
+   "label": "REGISTERED FARMS"
+  },
+  {
+   "n": 5,
+   "label": "CROP RECOMMENDATIONS"
+  },
+  {
+   "n": 6,
+   "label": "AVG PREDICTED YIELD"
+  },
+  {
+   "n": 7,
+   "label": "FERTILISER CHECKS"
+  },
+  {
+   "n": 8,
+   "label": "DISEASE SCANS"
+  },
+  {
+   "n": 9,
+   "label": "TOTAL PREDICTIONS"
+  },
+  {
+   "n": 10,
+   "label": "42%"
+  },
+  {
+   "n": 11,
+   "label": "Crop production analytics"
+  }
+ ],
+ "05_crop": [
+  {
+   "n": 1,
+   "label": "Sidebar navigation"
+  },
+  {
+   "n": 2,
+   "label": "Top bar"
+  },
+  {
+   "n": 3,
+   "label": "Nitrogen (N) (ratio) info"
+  },
+  {
+   "n": 4,
+   "label": "Next: which fertiliser does Rice need here?"
+  },
+  {
+   "n": 5,
+   "label": "RECOMMENDED CROP"
+  },
+  {
+   "n": 6,
+   "label": "Alternative crops"
+  },
+  {
+   "n": 7,
+   "label": "Input vs. typical range for rice"
+  }
+ ],
+ "06_yield": [
+  {
+   "n": 1,
+   "label": "Sidebar navigation"
+  },
+  {
+   "n": 2,
+   "label": "Top bar"
+  },
+  {
+   "n": 3,
+   "label": "State"
+  },
+  {
+   "n": 4,
+   "label": "PREDICTED YIELD"
+  },
+  {
+   "n": 5,
+   "label": "ESTIMATED PRODUCTION"
+  },
+  {
+   "n": 6,
+   "label": "DISTRICT HISTORY"
+  },
+  {
+   "n": 7,
+   "label": "Predicted vs. historical yield"
+  },
+  {
+   "n": 8,
+   "label": "Why this number (SHAP)"
+  },
+  {
+   "n": 9,
+   "label": "How good is the yield model?"
+  }
+ ],
+ "07_fertiliser": [
+  {
+   "n": 1,
+   "label": "Sidebar navigation"
+  },
+  {
+   "n": 2,
+   "label": "Top bar"
+  },
+  {
+   "n": 3,
+   "label": "Full analysis from the dataset"
+  },
+  {
+   "n": 4,
+   "label": "SUGGESTED FERTILISER CATEGORY"
+  },
+  {
+   "n": 5,
+   "label": "Why"
+  },
+  {
+   "n": 6,
+   "label": "Options to discuss with your advisor"
+  }
+ ],
+ "08_disease": [
+  {
+   "n": 1,
+   "label": "Sidebar navigation"
+  },
+  {
+   "n": 2,
+   "label": "Top bar"
+  },
+  {
+   "n": 3,
+   "label": "image (102).JPG"
+  },
+  {
+   "n": 4,
+   "label": "CAUSE"
+  }
+ ],
+ "09_assistant": [
+  {
+   "n": 1,
+   "label": "Sidebar navigation"
+  },
+  {
+   "n": 2,
+   "label": "Top bar"
+  },
+  {
+   "n": 3,
+   "label": "Change"
+  },
+  {
+   "n": 4,
+   "label": "AgriSense AI Assistant"
+  }
+ ],
+ "10_weather": [
+  {
+   "n": 1,
+   "label": "Sidebar navigation"
+  },
+  {
+   "n": 2,
+   "label": "Top bar"
+  },
+  {
+   "n": 3,
+   "label": "Location"
+  },
+  {
+   "n": 4,
+   "label": "42%"
+  },
+  {
+   "n": 5,
+   "label": "TOTAL RAINFALL"
+  },
+  {
+   "n": 6,
+   "label": "AVG TEMPERATURE"
+  },
+  {
+   "n": 7,
+   "label": "AVG MAX"
+  },
+  {
+   "n": 8,
+   "label": "AVG MIN"
+  },
+  {
+   "n": 9,
+   "label": "AVG HUMIDITY"
+  },
+  {
+   "n": 10,
+   "label": "AVG SOLAR RADIATION"
+  },
+  {
+   "n": 11,
+   "label": "Daily rainfall"
+  }
+ ],
+ "11_soil": [
+  {
+   "n": 1,
+   "label": "Sidebar navigation"
+  },
+  {
+   "n": 2,
+   "label": "Top bar"
+  },
+  {
+   "n": 3,
+   "label": "Farm"
+  },
+  {
+   "n": 4,
+   "label": "SOIL PH"
+  },
+  {
+   "n": 5,
+   "label": "TOTAL NITROGEN"
+  },
+  {
+   "n": 6,
+   "label": "ORGANIC CARBON"
+  },
+  {
+   "n": 7,
+   "label": "BULK DENSITY"
+  },
+  {
+   "n": 8,
+   "label": "CLAY"
+  },
+  {
+   "n": 9,
+   "label": "SAND"
+  },
+  {
+   "n": 10,
+   "label": "SILT"
+  },
+  {
+   "n": 11,
+   "label": "WATER AT FIELD CAPACITY"
+  }
+ ],
+ "12_farms": [
+  {
+   "n": 1,
+   "label": "Sidebar navigation"
+  },
+  {
+   "n": 2,
+   "label": "Top bar"
+  },
+  {
+   "n": 3,
+   "label": "Panel"
+  },
+  {
+   "n": 4,
+   "label": "North Field"
+  }
+ ],
+ "13_history": [
+  {
+   "n": 1,
+   "label": "Sidebar navigation"
+  },
+  {
+   "n": 2,
+   "label": "Top bar"
+  },
+  {
+   "n": 3,
+   "label": "Search"
+  },
+  {
+   "n": 4,
+   "label": "Panel"
+  }
+ ],
+ "14_reports": [
+  {
+   "n": 1,
+   "label": "Sidebar navigation"
+  },
+  {
+   "n": 2,
+   "label": "Top bar"
+  },
+  {
+   "n": 3,
+   "label": "Farm"
+  },
+  {
+   "n": 4,
+   "label": "Predictions by type"
+  },
+  {
+   "n": 5,
+   "label": "Activity over time"
+  },
+  {
+   "n": 6,
+   "label": "Recommended crops"
+  },
+  {
+   "n": 7,
+   "label": "Crop recommendation reports"
+  },
+  {
+   "n": 8,
+   "label": "Crop yield reports"
+  },
+  {
+   "n": 9,
+   "label": "Fertiliser recommendation reports"
+  },
+  {
+   "n": 10,
+   "label": "Plant disease reports"
+  },
+  {
+   "n": 11,
+   "label": "Weather reports"
+  }
+ ],
+ "15_settings": [
+  {
+   "n": 1,
+   "label": "Sidebar navigation"
+  },
+  {
+   "n": 2,
+   "label": "Top bar"
+  },
+  {
+   "n": 3,
+   "label": "Profile"
+  },
+  {
+   "n": 4,
+   "label": "Preferences"
+  },
+  {
+   "n": 5,
+   "label": "Change password"
+  },
+  {
+   "n": 6,
+   "label": "Account"
+  }
+ ],
+ "m1_overview": [
+  {
+   "n": 1,
+   "label": "Sidebar navigation"
+  },
+  {
+   "n": 2,
+   "label": "Top bar"
+  },
+  {
+   "n": 3,
+   "label": "Full auto analysis"
+  },
+  {
+   "n": 4,
+   "label": "REGISTERED FARMS"
+  },
+  {
+   "n": 5,
+   "label": "CROP RECOMMENDATIONS"
+  },
+  {
+   "n": 6,
+   "label": "AVG PREDICTED YIELD"
+  },
+  {
+   "n": 7,
+   "label": "FERTILISER CHECKS"
+  },
+  {
+   "n": 8,
+   "label": "DISEASE SCANS"
+  },
+  {
+   "n": 9,
+   "label": "TOTAL PREDICTIONS"
+  },
+  {
+   "n": 10,
+   "label": "42%"
+  },
+  {
+   "n": 11,
+   "label": "Crop production analytics"
+  }
+ ],
+ "m2_crop": [
+  {
+   "n": 1,
+   "label": "Sidebar navigation"
+  },
+  {
+   "n": 2,
+   "label": "Top bar"
+  },
+  {
+   "n": 3,
+   "label": "Nitrogen (N) (ratio) info"
+  }
+ ],
+ "m3_disease": [
+  {
+   "n": 1,
+   "label": "Sidebar navigation"
+  },
+  {
+   "n": 2,
+   "label": "Top bar"
+  },
+  {
+   "n": 3,
+   "label": "add_photo_alternate"
+  }
+ ]
+}

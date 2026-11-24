@@ -1,0 +1,18 @@
+# AgriSense AI (FastAPI) — container agrisense on 127.0.0.1:8150
+# Served on ai.software.microeagle.online. One router per host (see montana.yml).
+http:
+  routers:
+    agrisense:
+      rule: Host(`ai.software.microeagle.online`)
+      entryPoints:
+        - websecure
+      service: agrisense
+      tls:
+        certResolver: letsencrypt
+      priority: 10
+  services:
+    agrisense:
+      loadBalancer:
+        passHostHeader: true
+        servers:
+          - url: http://127.0.0.1:8150

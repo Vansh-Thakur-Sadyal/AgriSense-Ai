@@ -1,0 +1,100 @@
+{
+ "hi": {
+  "avg": 0.98,
+  "max": 1.72,
+  "longest_src": "Sign in",
+  "longest": "साइन इन करें",
+  "n": 30
+ },
+ "bn": {
+  "avg": 1.27,
+  "max": 3.14,
+  "longest_src": "Save",
+  "longest": "সংরক্ষণ করুন",
+  "n": 30
+ },
+ "mr": {
+  "avg": 0.95,
+  "max": 1.91,
+  "longest_src": "Save",
+  "longest": "जतन करा",
+  "n": 30
+ },
+ "te": {
+  "avg": 1.38,
+  "max": 2.94,
+  "longest_src": "Save",
+  "longest": "సేవ్ చేయండి",
+  "n": 30
+ },
+ "ta": {
+  "avg": 1.85,
+  "max": 3.56,
+  "longest_src": "Add farm",
+  "longest": "பண்ணையைச் சேர்க்கவும்",
+  "n": 30
+ },
+ "gu": {
+  "avg": 0.99,
+  "max": 1.95,
+  "longest_src": "Sign in",
+  "longest": "સાઇન ઇન કરો",
+  "n": 30
+ },
+ "ur": {
+  "avg": 1.34,
+  "max": 3.05,
+  "longest_src": "Save",
+  "longest": "محفوظ کریں",
+  "n": 30
+ },
+ "kn": {
+  "avg": 1.45,
+  "max": 2.49,
+  "longest_src": "Sign in",
+  "longest": "ಸೈನ್ ಇನ್ ಮಾಡಿ",
+  "n": 30
+ },
+ "or": {
+  "avg": 1.21,
+  "max": 2.91,
+  "longest_src": "Save",
+  "longest": "ସଞ୍ଚୟ କରନ୍ତୁ",
+  "n": 30
+ },
+ "ml": {
+  "avg": 2.12,
+  "max": 4.82,
+  "longest_src": "Save",
+  "longest": "സംരക്ഷിക്കുക",
+  "n": 30
+ },
+ "pa": {
+  "avg": 0.95,
+  "max": 1.93,
+  "longest_src": "Sign in",
+  "longest": "ਸਾਈਨ ਇਨ ਕਰੋ",
+  "n": 30
+ },
+ "as": {
+  "avg": 1.37,
+  "max": 3.23,
+  "longest_src": "Save",
+  "longest": "সংৰক্ষণ কৰক",
+  "n": 30
+ },
+ "mai": {
+  "avg": 0.93,
+  "max": 1.66,
+  "longest_src": "Sign in",
+  "longest": "प्रविष्टि करु",
+  "n": 30
+ },
+ "gom": {
+  "avg": 1.06,
+  "max": 1.97,
+  "longest_src": "Sign in",
+  "longest": "सायन इन करचें",
+  "n": 30
+ }
+}

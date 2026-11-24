@@ -1,0 +1,318 @@
+{
+  "name": "Logistic Regression on N, P, K",
+  "dataset": "Fertilizer Prediction.csv",
+  "rows": 99,
+  "classes": [
+    "10-26-26",
+    "14-35-14",
+    "17-17-17",
+    "20-20",
+    "28-28",
+    "DAP",
+    "Urea"
+  ],
+  "class_counts": {
+    "Urea": 22,
+    "DAP": 18,
+    "28-28": 17,
+    "14-35-14": 14,
+    "20-20": 14,
+    "17-17-17": 7,
+    "10-26-26": 7
+  },
+  "grades": {
+    "Urea": {
+      "grade": "46-0-0",
+      "supplies": "Nitrogen only"
+    },
+    "DAP": {
+      "grade": "18-46-0",
+      "supplies": "Phosphorus, with some nitrogen (diammonium phosphate)"
+    },
+    "14-35-14": {
+      "grade": "14-35-14",
+      "supplies": "Phosphorus-rich NPK complex"
+    },
+    "28-28": {
+      "grade": "28-28-0",
+      "supplies": "Nitrogen and phosphorus in equal parts, no potassium"
+    },
+    "17-17-17": {
+      "grade": "17-17-17",
+      "supplies": "Balanced nitrogen, phosphorus and potassium"
+    },
+    "20-20": {
+      "grade": "20-20-0",
+      "supplies": "Nitrogen and phosphorus, no potassium"
+    },
+    "10-26-26": {
+      "grade": "10-26-26",
+      "supplies": "Phosphorus and potassium-rich NPK complex"
+    }
+  },
+  "features": [
+    "N",
+    "P",
+    "K"
+  ],
+  "chosen": {
+    "model": "Logistic Regression",
+    "features": "N, P, K",
+    "cv_accuracy_mean": 1.0,
+    "cv_accuracy_std": 0.0,
+    "holdout_accuracy": 1.0,
+    "holdout_macro_f1": 1.0,
+    "seconds": 0.2
+  },
+  "comparison": [
+    {
+      "model": "Decision Tree",
+      "features": "N, P, K",
+      "cv_accuracy_mean": 0.9619,
+      "cv_accuracy_std": 0.0431,
+      "holdout_accuracy": 0.95,
+      "holdout_macro_f1": 0.9238,
+      "seconds": 0.06
+    },
+    {
+      "model": "Random Forest",
+      "features": "N, P, K",
+      "cv_accuracy_mean": 0.996,
+      "cv_accuracy_std": 0.0196,
+      "holdout_accuracy": 1.0,
+      "holdout_macro_f1": 1.0,
+      "seconds": 4.25
+    },
+    {
+      "model": "Logistic Regression",
+      "features": "N, P, K",
+      "cv_accuracy_mean": 1.0,
+      "cv_accuracy_std": 0.0,
+      "holdout_accuracy": 1.0,
+      "holdout_macro_f1": 1.0,
+      "seconds": 0.2
+    },
+    {
+      "model": "K-Nearest Neighbours",
+      "features": "N, P, K",
+      "cv_accuracy_mean": 0.9919,
+      "cv_accuracy_std": 0.0186,
+      "holdout_accuracy": 1.0,
+      "holdout_macro_f1": 1.0,
+      "seconds": 0.07
+    },
+    {
+      "model": "Decision Tree",
+      "features": "all features",
+      "cv_accuracy_mean": 0.9559,
+      "cv_accuracy_std": 0.0408,
+      "holdout_accuracy": 0.95,
+      "holdout_macro_f1": 0.9238,
+      "seconds": 0.11
+    },
+    {
+      "model": "Random Forest",
+      "features": "all features",
+      "cv_accuracy_mean": 0.9578,
+      "cv_accuracy_std": 0.0463,
+      "holdout_accuracy": 1.0,
+      "holdout_macro_f1": 1.0,
+      "seconds": 4.42
+    },
+    {
+      "model": "Logistic Regression",
+      "features": "all features",
+      "cv_accuracy_mean": 0.7673,
+      "cv_accuracy_std": 0.1099,
+      "holdout_accuracy": 0.85,
+      "holdout_macro_f1": 0.7447,
+      "seconds": 1.0
+    },
+    {
+      "model": "K-Nearest Neighbours",
+      "features": "all features",
+      "cv_accuracy_mean": 0.2348,
+      "cv_accuracy_std": 0.0912,
+      "holdout_accuracy": 0.2,
+      "holdout_macro_f1": 0.1796,
+      "seconds": 0.18
+    }
+  ],
+  "holdout_confusion_matrix": {
+    "labels": [
+      "10-26-26",
+      "14-35-14",
+      "17-17-17",
+      "20-20",
+      "28-28",
+      "DAP",
+      "Urea"
+    ],
+    "matrix": [
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5
+      ]
+    ]
+  },
+  "permutation_importance_all_features": [
+    {
+      "feature": "P",
+      "importance": 0.1707
+    },
+    {
+      "feature": "K",
+      "importance": 0.147
+    },
+    {
+      "feature": "N",
+      "importance": 0.1035
+    },
+    {
+      "feature": "temperature",
+      "importance": 0.0
+    },
+    {
+      "feature": "humidity",
+      "importance": 0.0
+    },
+    {
+      "feature": "moisture",
+      "importance": 0.0
+    },
+    {
+      "feature": "soil_type",
+      "importance": 0.0
+    },
+    {
+      "feature": "crop_type",
+      "importance": 0.0
+    }
+  ],
+  "ranges": {
+    "N": {
+      "min": 4.0,
+      "max": 42.0
+    },
+    "P": {
+      "min": 0.0,
+      "max": 42.0
+    },
+    "K": {
+      "min": 0.0,
+      "max": 19.0
+    },
+    "temperature": {
+      "min": 25.0,
+      "max": 38.0
+    },
+    "humidity": {
+      "min": 50.0,
+      "max": 72.0
+    },
+    "moisture": {
+      "min": 25.0,
+      "max": 65.0
+    }
+  },
+  "need_profile": {
+    "N": {
+      "min": 4.0,
+      "max": 42.0
+    },
+    "P": {
+      "min": 0.0,
+      "max": 42.0
+    },
+    "K": {
+      "min": 0.0,
+      "max": 19.0
+    }
+  },
+  "soil_types": [
+    "Black",
+    "Clayey",
+    "Loamy",
+    "Red",
+    "Sandy"
+  ],
+  "crop_types": [
+    "Barley",
+    "Cotton",
+    "Ground Nuts",
+    "Maize",
+    "Millets",
+    "Oil seeds",
+    "Paddy",
+    "Pulses",
+    "Sugarcane",
+    "Tobacco",
+    "Wheat"
+  ],
+  "notes": [
+    "99 rows: accuracy figures carry wide uncertainty.",
+    "In this dataset the fertiliser is decided by N, P and K; weather, moisture, soil and crop type add little (see permutation importance).",
+    "N, P and K here describe the nutrient to be supplied (Urea rows have high N and zero P and K), on the dataset's own scale - not kg/ha and not the crop dataset's scale."
+  ],
+  "trained_at": "2026-11-24 17:09:11",
+  "seed": 42
+}

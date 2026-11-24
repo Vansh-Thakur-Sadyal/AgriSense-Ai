@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AgriSense AI mobile mockups</title>
+<link rel="stylesheet" href="/fonts/fonts.css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0..1,0&display=block"/>
+<script src="/vendor/tailwind-3.4.16.js"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors: { primary: "#2E8B57", "primary-dark": "#236b44", secondary: "#62A87C", mint: "#F1F8F2", "mint-2": "#e2f2e8",
+            ink: "#24352B", muted: "#5f6e66", line: "#E5ECE6", sky: "#5B9BD5", sun: "#E8B94F", alert: "#D9534F" },
+  fontFamily: { sans: ["Inter", "Noto Sans Devanagari", "Nirmala UI", "sans-serif"] } } } };
+</script>
+<style>
+  body { background: #e9eeeb; margin: 0; }
+  .phone { width: 375px; height: 812px; background: #F7FAF8; position: relative; overflow: hidden; display: flex; flex-direction: column; font-family: Inter, sans-serif; color: #24352B; }
+  .ms { font-family: "Material Symbols Outlined"; font-weight: normal; font-style: normal; font-size: 24px; line-height: 1; display: inline-block; white-space: nowrap; direction: ltr; -webkit-font-feature-settings: "liga"; font-feature-settings: "liga"; font-variation-settings: "FILL" 0; }
+  .fill { font-variation-settings: "FILL" 1; }
+  .status { height: 36px; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; font-size: 13px; font-weight: 600; }
+  .appbar { height: 56px; display: flex; align-items: center; gap: 10px; padding: 0 16px; }
+  .card { background: #fff; border: 1px solid #E5ECE6; border-radius: 18px; box-shadow: 0 1px 2px rgba(36,53,43,.04), 0 6px 18px rgba(36,53,43,.06); }
+  .tab { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 2px; font-size: 11px; font-weight: 600; color: #5f6e66; padding-top: 8px; }
+  .tab.on { color: #236b44; }
+  .tab.on .pill { background: #e2f2e8; }
+  .pill { padding: 3px 18px; border-radius: 999px; }
+  .navbar { height: 76px; background: #fff; border-top: 1px solid #E5ECE6; display: flex; padding-bottom: 14px; position: relative; }
+  .scan { position: absolute; left: 50%; top: -22px; transform: translateX(-50%); width: 60px; height: 60px; border-radius: 20px; background: #2E8B57; color: #fff; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 20px rgba(46,139,87,.35); }
+  .btn { height: 52px; border-radius: 14px; font-weight: 700; font-size: 16px; display: flex; align-items: center; justify-content: center; gap: 8px; }
+  .btn-p { background: #2E8B57; color: #fff; } .btn-g { background: #F1F8F2; color: #236b44; }
+  .seg { display: flex; padding: 4px; background: #F1F8F2; border: 1px solid #E5ECE6; border-radius: 14px; }
+  .seg div { flex: 1; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 14px; font-weight: 600; color: #5f6e66; }
+  .seg .on { background: #fff; color: #236b44; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+  .field { background: #fff; border: 1.5px solid #dfe7e2; border-radius: 14px; height: 56px; display: flex; align-items: center; padding: 0 14px; gap: 10px; }
+  .chip { display: inline-flex; align-items: center; gap: 4px; padding: 6px 12px; border-radius: 999px; font-size: 13px; font-weight: 600; }
+  .home-ind { position: absolute; bottom: 6px; left: 50%; transform: translateX(-50%); width: 120px; height: 5px; border-radius: 9px; background: #24352B; opacity: .85; }
+</style>
+</head>
+<body>
+
+<!-- A. Onboarding: language -->
+<div class="phone" id="m_language">
+  <div class="status"><span>9:41</span><span class="flex gap-1 items-center"><span class="ms !text-[18px]">signal_cellular_alt</span><span class="ms !text-[18px]">battery_5_bar</span></span></div>
+  <div class="px-6 pt-6">
+    <div class="w-14 h-14 rounded-2xl bg-primary flex items-center justify-center text-white"><span class="ms !text-[30px]">eco</span></div>
+    <h1 class="text-[26px] font-bold mt-5 leading-tight">Choose your language</h1>
+    <p class="text-[15px] text-muted mt-1">अपनी भाषा चुनें · You can change it later in Settings.</p>
+  </div>
+  <div class="grid grid-cols-3 gap-2.5 px-6 mt-5">
+    <div class="card !rounded-2xl h-[74px] flex flex-col items-center justify-center !border-2 !border-primary bg-mint-2"><span class="text-[17px] font-semibold">English</span><span class="ms fill text-primary !text-[18px] mt-0.5">check_circle</span></div>
+    <div class="card !rounded-2xl h-[74px] flex items-center justify-center text-[18px] font-semibold">हिन्दी</div>
+    <div class="card !rounded-2xl h-[74px] flex items-center justify-center text-[18px] font-semibold">বাংলা</div>
+    <div class="card !rounded-2xl h-[74px] flex items-center justify-center text-[18px] font-semibold">मराठी</div>
+    <div class="card !rounded-2xl h-[74px] flex items-center justify-center text-[18px] font-semibold">తెలుగు</div>
+    <div class="card !rounded-2xl h-[74px] flex items-center justify-center text-[18px] font-semibold">தமிழ்</div>
+    <div class="card !rounded-2xl h-[74px] flex items-center justify-center text-[18px] font-semibold">ગુજરાતી</div>
+    <div class="card !rounded-2xl h-[74px] flex items-center justify-center text-[18px] font-semibold">اردو</div>
+    <div class="card !rounded-2xl h-[74px] flex items-center justify-center text-[18px] font-semibold">ಕನ್ನಡ</div>
+    <div class="card !rounded-2xl h-[74px] flex items-center justify-center text-[18px] font-semibold">ଓଡ଼ିଆ</div>
+    <div class="card !rounded-2xl h-[74px] flex items-center justify-center text-[18px] font-semibold">മലയാളം</div>
+    <div class="card !rounded-2xl h-[74px] flex items-center justify-center text-[18px] font-semibold">ਪੰਜਾਬੀ</div>
+    <div class="card !rounded-2xl h-[74px] flex items-center justify-center text-[18px] font-semibold">অসমীয়া</div>
+    <div class="card !rounded-2xl h-[74px] flex items-center justify-center text-[18px] font-semibold">मैथिली</div>
+    <div class="card !rounded-2xl h-[74px] flex items-center justify-center text-[18px] font-semibold">कोंकणी</div>
+  </div>
+  <div class="mt-auto px-6 pb-10"><div class="btn btn-p">Continue <span class="ms">arrow_forward</span></div>
+    <div class="flex items-center justify-center gap-2 mt-4 text-[13px] text-muted"><span class="ms !text-[18px]">volume_up</span> Tap a language to hear it spoken</div></div>
+  <div class="home-ind"></div>
+</div>
+
+<!-- B. Home -->
+<div class="phone" id="m_home">
+  <div class="status"><span>9:41</span><span class="flex gap-1 items-center"><span class="ms !text-[18px]">signal_cellular_alt</span><span class="ms !text-[18px]">battery_5_bar</span></span></div>
+  <div class="appbar">
+    <div class="w-9 h-9 rounded-xl bg-primary text-white flex items-center justify-center"><span class="ms !text-[20px]">eco</span></div>
+    <div class="flex-1"><div class="text-[12px] text-muted">Farm</div><div class="text-[15px] font-semibold flex items-center gap-0.5">North Field <span class="ms !text-[18px]">expand_more</span></div></div>
+    <div class="w-10 h-10 rounded-full bg-white border border-line flex items-center justify-center relative"><span class="ms">notifications</span><span class="absolute top-1.5 right-2 w-2 h-2 rounded-full bg-alert"></span></div>
+  </div>
+  <div class="flex-1 overflow-hidden px-4 pb-4 space-y-2.5">
+    <div class="card p-4 bg-gradient-to-br from-[#eef8f1] to-white">
+      <div class="text-[22px] font-bold leading-tight">Good afternoon, Asha!</div>
+      <div class="flex items-center gap-3 mt-3">
+        <span class="ms fill text-sun !text-[40px]">sunny</span>
+        <div><div class="text-[26px] font-bold leading-none">24°C</div><div class="text-[12px] text-muted">Clear · 40% humidity · no rain today</div></div>
+      </div>
+      <div class="mt-3 chip bg-[#fbf2dc] text-[#6d5214]"><span class="ms !text-[16px]">warning</span>Heavy rain likely on Thu - delay spraying</div>
+    </div>
+    <div class="card p-3 flex items-center gap-3 !border-primary/30 bg-mint">
+      <div class="w-11 h-11 rounded-xl bg-primary text-white flex items-center justify-center"><span class="ms">auto_awesome</span></div>
+      <div class="flex-1"><div class="text-[15px] font-semibold">Full auto analysis</div><div class="text-[12px] text-muted">Soil sample → best crop → fertiliser</div></div>
+      <span class="ms text-primary">chevron_right</span>
+    </div>
+    <div class="grid grid-cols-2 gap-2.5">
+      <div class="card px-3 py-2.5"><div class="w-9 h-9 rounded-xl bg-mint-2 text-primary flex items-center justify-center"><span class="ms">psychology</span></div><div class="text-[15px] font-semibold mt-2">Which crop?</div><div class="text-[12px] text-muted">Crop recommendation</div></div>
+      <div class="card px-3 py-2.5"><div class="w-9 h-9 rounded-xl bg-[#e6f0fa] text-[#2f6ea8] flex items-center justify-center"><span class="ms">trending_up</span></div><div class="text-[15px] font-semibold mt-2">How much?</div><div class="text-[12px] text-muted">Yield prediction</div></div>
+      <div class="card px-3 py-2.5"><div class="w-9 h-9 rounded-xl bg-[#fbf2dc] text-[#8a6514] flex items-center justify-center"><span class="ms">science</span></div><div class="text-[15px] font-semibold mt-2">Which fertiliser?</div><div class="text-[12px] text-muted">Nutrient check</div></div>
+      <div class="card px-3 py-2.5"><div class="w-9 h-9 rounded-xl bg-[#fdeceb] text-[#b83c3c] flex items-center justify-center"><span class="ms">coronavirus</span></div><div class="text-[15px] font-semibold mt-2">Is it sick?</div><div class="text-[12px] text-muted">Leaf disease scan</div></div>
+    </div>
+    <div class="flex items-center justify-between pt-1"><div class="text-[13px] font-semibold text-muted uppercase tracking-wide">Latest result</div><div class="text-[13px] text-primary font-semibold">History</div></div>
+    <div class="card p-3 flex items-center gap-3"><span class="chip bg-mint-2 text-primary-dark !px-2"><span class="ms !text-[18px]">trending_up</span></span><div class="flex-1"><div class="text-[15px] font-semibold">Wheat · 5.4 t/ha</div><div class="text-[12px] text-muted">Rabi 2025 · above district average</div></div><span class="ms text-muted">chevron_right</span></div>
+  </div>
+  <div class="navbar">
+    <div class="tab on"><span class="pill"><span class="ms fill">home</span></span>Home</div>
+    <div class="tab"><span class="pill"><span class="ms">insights</span></span>Predict</div>
+    <div class="tab"></div>
+    <div class="scan"><span class="ms !text-[30px]">photo_camera</span></div>
+    <div class="tab"><span class="pill"><span class="ms">smart_toy</span></span>Assistant</div>
+    <div class="tab"><span class="pill"><span class="ms">agriculture</span></span>Farms</div>
+  </div>
+  <div class="home-ind"></div>
+</div>
+
+<!-- C. Crop input -->
+<div class="phone" id="m_crop_input">
+  <div class="status"><span>9:41</span><span class="flex gap-1 items-center"><span class="ms !text-[18px]">signal_cellular_alt</span><span class="ms !text-[18px]">battery_5_bar</span></span></div>
+  <div class="appbar"><span class="ms">arrow_back</span><div class="flex-1 text-[18px] font-semibold">Which crop suits my soil?</div><span class="ms text-muted">help</span></div>
+  <div class="flex-1 overflow-hidden px-4 space-y-3">
+    <div class="seg"><div class="on"><span class="ms !text-[18px]">edit_note</span>My values</div><div><span class="ms !text-[18px]">shuffle</span>Sample</div></div>
+    <div class="card p-3 flex items-center gap-2 bg-mint"><span class="ms text-primary">upload_file</span><div class="flex-1 text-[13px]"><b>Have a Soil Health Card?</b><br/><span class="text-muted">Photograph it to fill N, P, K and pH</span></div><span class="ms text-primary">photo_camera</span></div>
+    <div class="text-[13px] font-semibold text-muted uppercase tracking-wide">Soil nutrients</div>
+    <div class="grid grid-cols-3 gap-2">
+      <div><div class="text-[13px] font-medium mb-1">Nitrogen N</div><div class="field !h-14 justify-center text-[20px] font-semibold">90</div></div>
+      <div><div class="text-[13px] font-medium mb-1">Phosph. P</div><div class="field !h-14 justify-center text-[20px] font-semibold">42</div></div>
+      <div><div class="text-[13px] font-medium mb-1">Potash K</div><div class="field !h-14 justify-center text-[20px] font-semibold">43</div></div>
+    </div>
+    <div><div class="text-[13px] font-medium mb-1">Soil pH</div>
+      <div class="field"><span class="ms text-muted">remove</span><div class="flex-1 text-center text-[20px] font-semibold">6.5</div><span class="ms text-muted">add</span></div>
+      <div class="h-2 rounded-full mt-2" style="background:linear-gradient(90deg,#e57373,#e8b94f,#62a87c,#5b9bd5,#7e6bc4)"></div>
+      <div class="flex justify-between text-[11px] text-muted mt-1"><span>Acidic</span><span>Neutral</span><span>Alkaline</span></div></div>
+    <div class="flex items-center justify-between"><div class="text-[13px] font-semibold text-muted uppercase tracking-wide">Climate</div><span class="chip bg-[#e6f0fa] text-[#2f6ea8]"><span class="ms !text-[16px]">cloud_download</span>Fill from forecast</span></div>
+    <div class="grid grid-cols-3 gap-2">
+      <div><div class="text-[13px] font-medium mb-1">Temp °C</div><div class="field !h-14 justify-center text-[20px] font-semibold">21</div></div>
+      <div><div class="text-[13px] font-medium mb-1">Humidity %</div><div class="field !h-14 justify-center text-[20px] font-semibold">82</div></div>
+      <div><div class="text-[13px] font-medium mb-1">Rain mm</div><div class="field !h-14 justify-center text-[20px] font-semibold">203</div></div>
+    </div>
+  </div>
+  <div class="p-4 bg-white border-t border-line"><div class="btn btn-p"><span class="ms">auto_awesome</span>Find suitable crop</div></div>
+  <div class="home-ind"></div>
+</div>
+
+<!-- D. Result: crop -> fertiliser -->
+<div class="phone" id="m_result">
+  <div class="status"><span>9:41</span><span class="flex gap-1 items-center"><span class="ms !text-[18px]">signal_cellular_alt</span><span class="ms !text-[18px]">battery_5_bar</span></span></div>
+  <div class="appbar"><span class="ms">close</span><div class="flex-1 text-[18px] font-semibold">Your result</div><span class="ms text-muted">share</span></div>
+  <div class="flex-1 overflow-hidden px-4 space-y-3">
+    <div class="card p-4 text-center">
+      <div class="text-[13px] text-muted">Best crop for this soil</div>
+      <div class="text-[34px] font-bold text-primary-dark leading-tight mt-1">Rice</div>
+      <div class="flex justify-center gap-1.5 mt-2"><span class="chip bg-mint-2 text-primary-dark"><span class="ms fill !text-[16px]">verified</span>99% sure</span><span class="chip bg-line text-ink">Model 99.6% accurate</span></div>
+      <div class="flex justify-center gap-2 mt-3 text-[12px] text-muted"><span>Also good:</span><b class="text-ink">Jute</b><b class="text-ink">Papaya</b></div>
+    </div>
+    <div class="card p-4">
+      <div class="flex items-center gap-2"><span class="ms text-[#8a6514]">science</span><div class="text-[15px] font-semibold flex-1">Fertiliser for rice</div></div>
+      <div class="flex items-baseline gap-2 mt-1.5"><div class="text-[26px] font-bold leading-none text-primary-dark">Urea</div><div class="text-[12px] text-muted">46-0-0 · nitrogen only</div></div>
+      <div class="flex gap-1.5 mt-2"><span class="chip bg-mint-2 text-primary-dark"><span class="ms fill !text-[16px]">verified</span>95% model confidence</span></div>
+      <div class="grid grid-cols-3 gap-2 mt-3">
+        <div class="rounded-xl bg-[#fdeceb] p-2 text-center"><div class="text-[11px] text-[#b83c3c] font-semibold">N · 50% SHORT</div><div class="text-[18px] font-bold">40<span class="text-[11px] text-muted font-medium"> / 80</span></div></div>
+        <div class="rounded-xl bg-mint-2 p-2 text-center"><div class="text-[11px] text-primary-dark font-semibold">P · OK</div><div class="text-[18px] font-bold">60<span class="text-[11px] text-muted font-medium"> / 47</span></div></div>
+        <div class="rounded-xl bg-mint-2 p-2 text-center"><div class="text-[11px] text-primary-dark font-semibold">K · OK</div><div class="text-[18px] font-bold">50<span class="text-[11px] text-muted font-medium"> / 40</span></div></div>
+      </div>
+      <div class="mt-3 text-[13px] text-muted flex gap-1.5"><span class="ms !text-[18px] text-sun">info</span>Get the dose from your soil test report and KVK. AgriSense never gives quantities.</div>
+    </div>
+    <div class="card p-3 flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center"><span class="ms">smart_toy</span></div><div class="flex-1"><div class="text-[15px] font-semibold">Ask about this result</div><div class="text-[12px] text-muted">Answers in your language</div></div><span class="ms text-primary">chevron_right</span></div>
+  </div>
+  <div class="p-4 bg-white border-t border-line grid grid-cols-2 gap-2"><div class="btn btn-g"><span class="ms">download</span>Save PDF</div><div class="btn btn-p"><span class="ms">shuffle</span>New sample</div></div>
+  <div class="home-ind"></div>
+</div>
+
+<!-- E. Disease scan camera -->
+<div class="phone" id="m_scan" style="background:#0f1512;color:#fff">
+  <div class="status"><span>9:41</span><span class="flex gap-1 items-center"><span class="ms !text-[18px]">signal_cellular_alt</span><span class="ms !text-[18px]">battery_5_bar</span></span></div>
+  <div class="appbar"><span class="ms">close</span><div class="flex-1 text-[17px] font-semibold text-center">Scan a leaf</div><span class="ms">flash_on</span></div>
+  <div class="flex-1 relative mx-4 rounded-3xl overflow-hidden" style="background:radial-gradient(circle at 50% 45%,#3f6b47 0%,#23392a 55%,#141c17 100%)">
+    <svg viewBox="0 0 200 240" class="absolute inset-0 m-auto w-[230px] h-[280px] opacity-90"><path d="M100 18 C150 50 178 110 150 170 C130 210 108 222 100 228 C92 222 70 210 50 170 C22 110 50 50 100 18Z" fill="#5f9a62"/><path d="M100 30 V220" stroke="#3d6e41" stroke-width="3"/><g stroke="#3d6e41" stroke-width="2"><path d="M100 70 L135 50"/><path d="M100 100 L145 85"/><path d="M100 130 L148 120"/><path d="M100 70 L65 50"/><path d="M100 100 L55 85"/><path d="M100 130 L52 120"/></g><circle cx="128" cy="120" r="9" fill="#7a5a2b"/><circle cx="72" cy="150" r="6" fill="#7a5a2b"/></svg>
+    <div class="absolute inset-[36px] border-2 border-white/80 rounded-[28px]" style="border-style:dashed"></div>
+    <div class="absolute top-4 left-0 right-0 flex justify-center"><span class="chip bg-black/50 text-white"><span class="ms !text-[16px]">check_circle</span>One leaf · fills the frame · daylight</span></div>
+    <div class="absolute bottom-4 left-0 right-0 flex justify-center"><span class="chip bg-white text-ink"><span class="ms !text-[16px] text-primary">eco</span>Works for 14 crops</span></div>
+  </div>
+  <div class="h-[150px] flex items-center justify-around px-8">
+    <div class="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center"><span class="ms">photo_library</span></div>
+    <div class="w-[78px] h-[78px] rounded-full border-4 border-white flex items-center justify-center"><div class="w-[62px] h-[62px] rounded-full bg-white"></div></div>
+    <div class="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center"><span class="ms">shuffle</span></div>
+  </div>
+  <div class="home-ind" style="background:#fff"></div>
+</div>
+
+<!-- F. Assistant -->
+<div class="phone" id="m_assistant">
+  <div class="status"><span>9:41</span><span class="flex gap-1 items-center"><span class="ms !text-[18px]">signal_cellular_alt</span><span class="ms !text-[18px]">battery_5_bar</span></span></div>
+  <div class="appbar"><div class="w-9 h-9 rounded-xl bg-primary text-white flex items-center justify-center"><span class="ms !text-[20px]">eco</span></div><div class="flex-1"><div class="text-[16px] font-semibold">Assistant</div><div class="text-[12px] text-muted flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-primary inline-block"></span>Uses your farm & results</div></div><span class="chip bg-mint border border-line"><span class="ms !text-[16px]">translate</span>हिन्दी</span></div>
+  <div class="flex-1 overflow-hidden px-4 space-y-3 pt-2">
+    <div class="flex justify-end"><div class="bg-primary text-white rounded-2xl rounded-br-md px-4 py-2.5 text-[15px] max-w-[80%]">मेरे गेहूं के पत्तों पर पीली धारियाँ हैं, क्या करूँ?</div></div>
+    <div class="flex gap-2"><div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center shrink-0"><span class="ms !text-[18px]">eco</span></div>
+      <div class="bg-white border border-line rounded-2xl rounded-bl-md px-4 py-3 text-[15px] leading-relaxed">पीली धारियाँ <b>पीला रतुआ (yellow rust)</b> हो सकता है, जो ठंडे, नम मौसम में फैलता है।<br/><br/><b>अभी जाँचें:</b><br/>• धारियों को उँगली से रगड़ें - पीला पाउडर आए तो रतुआ है<br/>• पत्ते की साफ़ फ़ोटो भेजें, मैं जाँच कर दूँगा<br/><br/>दवा और मात्रा के लिए अपने KVK से पूछें।
+        <div class="flex gap-3 mt-2 text-muted"><span class="ms !text-[20px]">volume_up</span><span class="ms !text-[20px]">content_copy</span><span class="ms !text-[20px]">thumb_up</span></div></div></div>
+    <div class="flex gap-2 overflow-hidden"><span class="chip bg-white border border-line whitespace-nowrap"><span class="ms !text-[16px] text-primary">photo_camera</span>फ़ोटो भेजें</span><span class="chip bg-white border border-line whitespace-nowrap">नज़दीकी KVK</span><span class="chip bg-white border border-line whitespace-nowrap">मौसम देखें</span></div>
+  </div>
+  <div class="px-3 pt-2 pb-7 bg-white border-t border-line flex items-center gap-2">
+    <div class="w-11 h-11 rounded-full bg-mint flex items-center justify-center text-primary"><span class="ms">add_photo_alternate</span></div>
+    <div class="flex-1 h-12 rounded-full border border-line px-4 flex items-center text-[15px] text-muted">अपना सवाल लिखें…</div>
+    <div class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center"><span class="ms fill">mic</span></div>
+  </div>
+  <div class="home-ind"></div>
+</div>
+
+<!-- G. Farm with map + bottom sheet -->
+<div class="phone" id="m_farm">
+  <div class="status"><span>9:41</span><span class="flex gap-1 items-center"><span class="ms !text-[18px]">signal_cellular_alt</span><span class="ms !text-[18px]">battery_5_bar</span></span></div>
+  <div class="flex-1 relative" style="background:#e8efe9">
+    <svg class="absolute inset-0 w-full h-full" viewBox="0 0 375 700" preserveAspectRatio="none"><rect width="375" height="700" fill="#eef3ec"/><path d="M0 260 C90 230 160 300 375 250" stroke="#bcd5e6" stroke-width="16" fill="none"/><path d="M60 0 L120 700" stroke="#fff" stroke-width="8"/><path d="M0 420 L375 380" stroke="#fff" stroke-width="10"/><path d="M250 0 L300 700" stroke="#f6dca8" stroke-width="7"/><g fill="#d7e8cf"><rect x="140" y="120" width="80" height="60" rx="4"/><rect x="20" y="300" width="70" height="80" rx="4"/><rect x="200" y="440" width="120" height="70" rx="4"/></g><path d="M150 300 L230 285 L245 350 L165 368Z" fill="#2E8B57" fill-opacity=".25" stroke="#2E8B57" stroke-width="3"/></svg>
+    <div class="absolute top-3 left-4 right-4 field !h-12 shadow-md"><span class="ms text-muted">search</span><span class="text-[15px] text-muted">Search village or district</span></div>
+    <div class="absolute right-4 top-20 w-11 h-11 rounded-full bg-white shadow flex items-center justify-center text-primary"><span class="ms">my_location</span></div>
+    <div class="absolute left-[178px] top-[300px] w-9 h-9 rounded-full bg-primary border-4 border-white shadow-lg"></div>
+    <div class="absolute bottom-0 left-0 right-0 bg-white rounded-t-3xl shadow-[0_-8px_24px_rgba(0,0,0,.08)] p-4 pb-8">
+      <div class="w-10 h-1.5 rounded-full bg-line mx-auto mb-3"></div>
+      <div class="flex items-center gap-2"><div class="flex-1"><div class="text-[19px] font-bold">North Field</div><div class="text-[13px] text-muted">Ayali Kalan, Ludhiana · 3 ha · Loamy</div></div><span class="chip bg-mint-2 text-primary-dark">Wheat</span></div>
+      <div class="grid grid-cols-3 gap-2 mt-3">
+        <div class="rounded-xl bg-mint p-2"><div class="text-[11px] text-muted">Soil pH</div><div class="text-[16px] font-bold">7.8</div></div>
+        <div class="rounded-xl bg-mint p-2"><div class="text-[11px] text-muted">Today</div><div class="text-[16px] font-bold">24°C</div></div>
+        <div class="rounded-xl bg-mint p-2"><div class="text-[11px] text-muted">Last yield</div><div class="text-[16px] font-bold">5.4 t/ha</div></div>
+      </div>
+      <div class="grid grid-cols-2 gap-2 mt-3"><div class="btn btn-g !h-12 !text-[15px]"><span class="ms">edit</span>Edit</div><div class="btn btn-p !h-12 !text-[15px]"><span class="ms">auto_awesome</span>Analyse</div></div>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="tab"><span class="pill"><span class="ms">home</span></span>Home</div>
+    <div class="tab"><span class="pill"><span class="ms">insights</span></span>Predict</div>
+    <div class="tab"></div>
+    <div class="scan"><span class="ms !text-[30px]">photo_camera</span></div>
+    <div class="tab"><span class="pill"><span class="ms">smart_toy</span></span>Assistant</div>
+    <div class="tab on"><span class="pill"><span class="ms fill">agriculture</span></span>Farms</div>
+  </div>
+  <div class="home-ind"></div>
+</div>
+
+</body>
+</html>

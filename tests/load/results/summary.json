@@ -1,0 +1,280 @@
+{
+ "host": {
+  "cpu": "AMD EPYC 9355P 32-Core Processor",
+  "vcpus": "2",
+  "Mem": "           7940        3114        1009          31        4146        4826",
+  "image": "agrisense:local"
+ },
+ "bench": {
+  "warm_up_ms_all_models": 2101.9,
+  "crop_recommendation": {
+   "calls": 300,
+   "mean_ms": 61.85,
+   "p50_ms": 65.28,
+   "p95_ms": 77.58,
+   "max_ms": 88.71,
+   "per_second_one_core": 16.2
+  },
+  "fertiliser": {
+   "calls": 300,
+   "mean_ms": 0.64,
+   "p50_ms": 0.71,
+   "p95_ms": 1.0,
+   "max_ms": 3.13,
+   "per_second_one_core": 1563.9
+  },
+  "yield_prediction": {
+   "calls": 200,
+   "mean_ms": 37.19,
+   "p50_ms": 36.64,
+   "p95_ms": 43.0,
+   "max_ms": 61.83,
+   "per_second_one_core": 26.9
+  },
+  "leaf_disease": {
+   "calls": 60,
+   "mean_ms": 11.1,
+   "p50_ms": 10.86,
+   "p95_ms": 13.4,
+   "max_ms": 18.48,
+   "per_second_one_core": 90.1
+  }
+ },
+ "capacity_users_p95_under_2s": 100,
+ "capacity_rps_at_that_point": 68.17,
+ "max_users_tested": 200,
+ "step": [
+  {
+   "users": 10,
+   "t_start": 1795524153.3193476,
+   "t_end": 1795524184.6271837,
+   "requests": 290,
+   "errors": 0,
+   "error_rate": 0.0,
+   "rps": 9.67,
+   "p50_ms": 22.7,
+   "p95_ms": 85.1,
+   "p99_ms": 142.2,
+   "max_ms": 150.7
+  },
+  {
+   "users": 25,
+   "t_start": 1795524189.6318111,
+   "t_end": 1795524220.6575143,
+   "requests": 723,
+   "errors": 0,
+   "error_rate": 0.0,
+   "rps": 24.1,
+   "p50_ms": 34.9,
+   "p95_ms": 99.2,
+   "p99_ms": 138.6,
+   "max_ms": 188.2
+  },
+  {
+   "users": 50,
+   "t_start": 1795524225.6633003,
+   "t_end": 1795524257.0156958,
+   "requests": 1364,
+   "errors": 0,
+   "error_rate": 0.0,
+   "rps": 45.47,
+   "p50_ms": 68.2,
+   "p95_ms": 335.0,
+   "p99_ms": 761.4,
+   "max_ms": 1210.0
+  },
+  {
+   "users": 100,
+   "t_start": 1795524262.0219588,
+   "t_end": 1795524293.7562551,
+   "requests": 2045,
+   "errors": 0,
+   "error_rate": 0.0,
+   "rps": 68.17,
+   "p50_ms": 429.3,
+   "p95_ms": 991.0,
+   "p99_ms": 1324.0,
+   "max_ms": 2088.9
+  },
+  {
+   "users": 150,
+   "t_start": 1795524298.763549,
+   "t_end": 1795524331.327528,
+   "requests": 1682,
+   "errors": 0,
+   "error_rate": 0.0,
+   "rps": 56.07,
+   "p50_ms": 1528.2,
+   "p95_ms": 3151.2,
+   "p99_ms": 6820.8,
+   "max_ms": 8642.8
+  },
+  {
+   "users": 200,
+   "t_start": 1795524336.3324,
+   "t_end": 1795524369.8706958,
+   "requests": 1890,
+   "errors": 0,
+   "error_rate": 0.0,
+   "rps": 63.0,
+   "p50_ms": 2030.9,
+   "p95_ms": 4063.8,
+   "p99_ms": 8054.0,
+   "max_ms": 10109.1
+  }
+ ],
+ "peak_cpu_percent": 190.04,
+ "peak_mem_mib": 705.1,
+ "spike": {
+  "requests": 1804,
+  "errors": 0,
+  "p95_ms": 2469.4,
+  "after_p95_ms": 74.2
+ },
+ "baseline": {
+  "GET /api/me": {
+   "requests": 40,
+   "errors": 0,
+   "error_rate": 0.0,
+   "rps": 120.46,
+   "p50_ms": 7.4,
+   "p95_ms": 14.8,
+   "p99_ms": 15.3,
+   "max_ms": 15.3
+  },
+  "GET /api/overview": {
+   "requests": 40,
+   "errors": 0,
+   "error_rate": 0.0,
+   "rps": 87.21,
+   "p50_ms": 9.6,
+   "p95_ms": 21.3,
+   "p99_ms": 38.1,
+   "max_ms": 38.1
+  },
+  "GET /api/predictions": {
+   "requests": 40,
+   "errors": 0,
+   "error_rate": 0.0,
+   "rps": 119.54,
+   "p50_ms": 6.9,
+   "p95_ms": 21.2,
+   "p99_ms": 21.9,
+   "max_ms": 21.9
+  },
+  "POST /api/crop/recommend": {
+   "requests": 40,
+   "errors": 0,
+   "error_rate": 0.0,
+   "rps": 7.82,
+   "p50_ms": 84.7,
+   "p95_ms": 106.1,
+   "p99_ms": 1795.4,
+   "max_ms": 1795.4
+  },
+  "POST /api/fertiliser": {
+   "requests": 40,
+   "errors": 0,
+   "error_rate": 0.0,
+   "rps": 48.42,
+   "p50_ms": 19.7,
+   "p95_ms": 31.6,
+   "p99_ms": 35.2,
+   "max_ms": 35.2
+  },
+  "POST /api/yield/predict": {
+   "requests": 40,
+   "errors": 0,
+   "error_rate": 0.0,
+   "rps": 18.96,
+   "p50_ms": 50.9,
+   "p95_ms": 58.3,
+   "p99_ms": 134.1,
+   "max_ms": 134.1
+  },
+  "POST /api/disease": {
+   "requests": 15,
+   "errors": 0,
+   "error_rate": 0.0,
+   "rps": 13.65,
+   "p50_ms": 60.8,
+   "p95_ms": 283.6,
+   "p99_ms": 283.6,
+   "max_ms": 283.6
+  }
+ },
+ "throughput": {
+  "GET /api/me": {
+   "requests": 7484,
+   "errors": 0,
+   "error_rate": 0.0,
+   "rps": 374.2,
+   "p50_ms": 14.5,
+   "p95_ms": 55.0,
+   "p99_ms": 77.2,
+   "max_ms": 186.8
+  },
+  "GET /api/overview": {
+   "requests": 5820,
+   "errors": 0,
+   "error_rate": 0.0,
+   "rps": 291.0,
+   "p50_ms": 25.2,
+   "p95_ms": 50.1,
+   "p99_ms": 68.6,
+   "max_ms": 103.1
+  },
+  "GET /api/predictions": {
+   "requests": 3051,
+   "errors": 0,
+   "error_rate": 0.0,
+   "rps": 152.55,
+   "p50_ms": 46.6,
+   "p95_ms": 101.5,
+   "p99_ms": 146.1,
+   "max_ms": 331.9
+  },
+  "POST /api/crop/recommend": {
+   "requests": 593,
+   "errors": 0,
+   "error_rate": 0.0,
+   "rps": 29.65,
+   "p50_ms": 248.4,
+   "p95_ms": 475.0,
+   "p99_ms": 559.3,
+   "max_ms": 2037.5
+  },
+  "POST /api/fertiliser": {
+   "requests": 3352,
+   "errors": 0,
+   "error_rate": 0.0,
+   "rps": 167.6,
+   "p50_ms": 44.9,
+   "p95_ms": 89.0,
+   "p99_ms": 113.1,
+   "max_ms": 154.6
+  },
+  "POST /api/yield/predict": {
+   "requests": 599,
+   "errors": 0,
+   "error_rate": 0.0,
+   "rps": 29.95,
+   "p50_ms": 255.9,
+   "p95_ms": 509.6,
+   "p99_ms": 610.0,
+   "max_ms": 681.5
+  },
+  "POST /api/disease": {
+   "requests": 780,
+   "errors": 0,
+   "error_rate": 0.0,
+   "rps": 39.0,
+   "p50_ms": 191.3,
+   "p95_ms": 382.4,
+   "p99_ms": 457.1,
+   "max_ms": 666.5
+  }
+ },
+ "total_requests": 32061,
+ "total_errors": 0
+}

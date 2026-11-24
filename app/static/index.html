@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AgriSense AI</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+<!-- Fonts are self-hosted: when fonts.googleapis.com was blocked or slow, icon names (e.g. "dashboard") showed as text. -->
+<link rel="preload" href="/fonts/fonts.css" as="style"/>
+<link rel="stylesheet" href="/fonts/fonts.css"/>
+<link rel="stylesheet" href="/vendor/leaflet/leaflet.min.css"/>
+<script>
+// Apply the saved theme before anything paints (no white flash in dark mode).
+(function () { var p = "system"; try { p = localStorage.getItem("theme") || "system"; } catch (e) {}
+  if (p === "dark" || (p === "system" && window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches)) document.documentElement.classList.add("dark"); })();
+</script>
+<script src="/vendor/tailwind-3.4.16.js"></script>
+<script>
+// Palette as CSS variables (styles.css) so dark mode swaps every Tailwind colour at once.
+const twv = (n) => `rgb(var(--c-${n}) / <alpha-value>)`;
+tailwind.config = { darkMode: "class", theme: { extend: {
+  colors: {
+    primary: twv("primary"), "primary-dark": twv("primary-dark"), secondary: twv("secondary"), mint: twv("mint"), cream: twv("cream"),
+    ink: twv("ink"), muted: twv("muted"), line: twv("line"), sky: twv("sky"), sun: twv("sun"), alert: twv("alert"), "mint-2": twv("mint-2")
+  },
+  fontFamily: { sans: ["Inter", "Noto Sans Devanagari", "Nirmala UI", "Noto Sans", "system-ui", "sans-serif"] },
+  borderRadius: { card: "16px" },
+  boxShadow: { card: "0 1px 2px rgba(36,53,43,.04), 0 4px 16px rgba(36,53,43,.05)" }
+}}};
+</script>
+<link rel="stylesheet" href="/styles.css"/>
+</head>
+<body class="bg-mint text-ink font-sans antialiased">
+<div id="root"></div>
+<div id="toasts" class="fixed bottom-4 right-4 z-[2100] flex flex-col gap-2"></div>
+<div id="modal" class="fixed inset-0 z-[2000] hidden items-center justify-center bg-ink/30 p-4"></div>
+<script src="/vendor/chart-4.4.1.umd.min.js"></script>
+<script src="/vendor/leaflet/leaflet.min.js"></script>
+<script src="/i18n.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>
